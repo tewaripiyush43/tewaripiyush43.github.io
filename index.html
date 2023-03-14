@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+    <title>Minesweeper</title>
+  </head>
+  <body>
+    <section class="title-board">
+      <h3 class="title">Minesweeper</h3>
+      <p class="refresh">Press enter for New Game</p>
+      <div class="subtext">Mines Left: <span data-mine-count>10</span></div>
+      <div class="board"></div>
+    </section>
+    <section class="popup">
+      <h4>Difficulty level</h4>
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#8656;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>Easy</li>
+          <li class="slide">Medium</li>
+          <li class="slide">Hard</li>
+        </ul>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#8658;
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
